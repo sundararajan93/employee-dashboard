@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="jumbotron">
+    <h1>STAFF</h1>
+    <ul class="list-group">
+    {% for s in staff %}
+        <li class="list-group-item"><a href="staff/{{s.emp_id}}">{{s.name}}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{% for name in data %}
+    {{ name['name'] }} - {{name['username'] }}<br>
+{% endfor %}
+
+
+{% endblock %}

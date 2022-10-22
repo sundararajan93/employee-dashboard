@@ -1,0 +1,5 @@
+# Getting image from dockerhub
+FROM mysql:latest
+
+#Environment variables
+ENV MYSQL_ROOT_PASSWORD=password

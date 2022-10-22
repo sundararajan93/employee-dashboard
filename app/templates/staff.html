@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+<h1>{{ emp_id }}</h1>
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Information</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <th scope="row">Employee ID</th>
+        <td>{{ name['emp_id']}}</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>{{ name['name'] }}</td>
+    </tr>
+    <tr>
+        <th>DOB</th>
+        <td>{{ name['dob'] }}</td>
+    </tr>
+    <tr>
+        <th>AGE</th>
+        <td>{{ name['age'] }}</td>
+    </tr>
+    <tr>
+        <th>BAND</th>
+        <td>{{ name['Band'] }}</td>
+    </tr>
+    <tr>
+        <th>Designation</th>
+        <td>{{ name['Designation'] }}</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
